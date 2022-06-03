@@ -8,7 +8,7 @@ const ArticleItem = ({ article }) => {
           <h3 class="font-bold text-xl hover:text-blue-400 mb-2">
             {article.title}
           </h3>
-          <p class="text-gray-700 text-base">{article.excerpt}</p>
+          <p class="text-gray-700 text-base">{article.body.substring(0, 80)}</p>
         </a>
       </div>
     </Link>
